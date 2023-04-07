@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Button Modal -->
+    <button type="button" class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+        Comenzar reserva
+    </button>
+
+    <!-- MODALES -->
+
+    <!--======= Form Cotizacion =======-->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Cotización</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Body / form -->
+            <div class="modal-body">
+                <div class="d-flex justify-content-between align-items-center mx-3">
+                    <h2 class="modal-body-title m-0">Escoger estancia</h2>
+                    <p class="modal-body-total m-0">
+                        Total $
+                        <span id="PRECIO-TOTAL">0,00</span>
+                    </p>
+                </div>
+                <hr>
+                <div class="modal-body-content mx-3">
+                    <div class="row">
+                        
+                        <div class="row g-3 align-items-center">
+                            <div class="col-3">
+                                <label for="inputDate" class="col-form-label">Cantidad de días</label>
+                            </div>
+                            <div class="col-lg-auto col row ms-auto">
+                                <div class="col-6 col-lg-auto">
+                                    <input type="date" id="inputDate" class="form-control">
+                                </div>
+                                <div class="col-6 col-lg-auto">
+                                    <input type="date" id="inputDate" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-center">
+                            <div class="col-3">
+                                <p class="col-form-label">Personas y habitaciones</p>
+                            </div>
+                            <div class="col-lg-auto col row ms-auto">
+                                <div class="col-auto">
+                                    <button class="btn btn-rooms" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Selecionar cantidad
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-center">
+                            <div class="col-3">
+                                <label for="inputDate" class="col-form-label">Extras a añadir</label>
+                            </div>
+                            <div class="col-lg-6 col-auto d-flex justify-content-between ms-auto">
+                                <div class="form-check d-inline">
+                                    <input type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Estacionamiento
+                                    </label>
+                                </div>
+                                <div class="form-check d-inline">
+                                    <input type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Gimnasio
+                                    </label>
+                                </div>
+                                <div class="form-check d-inline">
+                                    <input type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Spa
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer / botones -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-gold" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Siguiente</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--======= Form Datos =======-->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Datos personales</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Body / form -->
+                <div class="modal-body">
+                    CONTENIDO
+                </div>
+                <!-- Footer / botones -->
+                <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver</button>
+                    <button class="btn btn-gold" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======= Form Resumen =======-->
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Resumen</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Body / form -->
+                <div class="modal-body">
+                    CONTENIDO
+                </div>
+                <!-- Footer / botones -->
+                <div class="modal-footer">
+                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
