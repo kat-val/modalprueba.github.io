@@ -23,29 +23,7 @@ body {
     color: #F2EDE3;
 }
 
-/* Modal body */
-.modal-body-content {
-    margin: 1rem;
-}
-
-.modal-body-title {
-    display: inline;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-.modal-body-total {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-align: end;
-}
-
-.btn-rooms {
-    border: 1px solid #dee2e6;
-}
-.btn-rooms:hover {
-    border: 1px solid #dee2e6;
-}
-
+/* MAIN */
 #modal-container {
     background-color: #fff;
     max-width: 49.875rem;
@@ -56,14 +34,13 @@ body {
 }
 
 .modal-body-content {
-    margin: 2.9375rem 0;
-    row-gap: 2.5rem;
+    margin: 1rem;
 }
 
 .modal-body-title {
     display: inline;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .modal-body-total {
     font-size: 1.25rem;
@@ -85,12 +62,7 @@ body {
     padding: .5625rem .75rem;
 }
 
-.label-cotizacion {
-    font-weight: 500;
-}
-
 /* Estilos 'Personas y Habitaciones' */
-
 .label-pple-room {
     font-weight: 500;
 }
