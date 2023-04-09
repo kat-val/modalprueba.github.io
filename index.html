@@ -38,7 +38,7 @@
                     <div class="modal-body-content d-flex flex-column mx-3">
                         <!-- Personas y habitaciones -->
                         <div class="d-flex g-3 justify-content-between align-items-center">
-                            <p class="m-0 mt-2 align-self-start label-cotizacion">Personas y habitaciones</p>
+                            <p class="m-0 mt-2 align-self-start label-cotizacion me-2 me-lg-0">Personas y habitaciones</p>
                             <div class="accordion accordion-width" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
@@ -84,7 +84,7 @@
                         </div>
                         <!-- Cantidad de dias -->
                         <div class="d-flex g-3 justify-content-between align-items-center">
-                            <label for="inputDate" class="label-cotizacion">Cantidad de días</label>
+                            <label for="inputDate" class="label-cotizacion me-2 me-lg-0">Cantidad de días</label>
                             <div class="d-flex">
                                 <div class="p-0 me-3">
                                     <input type="date" id="inputDate" class="form-control input-date">
@@ -96,22 +96,22 @@
                         </div>
                         <!-- Extras a añadir -->
                         <div class="d-flex g-3 justify-content-between align-items-center">
-                            <label for="inputDate" class="label-cotizacion">Extras a añadir</label>
-                            <div class="d-flex justify-content-between">
+                            <label for="inputDate" class="label-cotizacion me-2 me-lg-0">Extras a añadir</label>
+                            <div class="d-flex flex-wrap flex-lg-nowrap">
                                 <div class="form-check d-inline me-3">
-                                    <input type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input type="checkbox" value="1" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Estacionamiento
                                     </label>
                                 </div>
                                 <div class="form-check d-inline me-3">
-                                    <input type="checkbox" value="" id="flexCheckDefault">
+                                    <input type="checkbox" value="2" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Gimnasio
                                     </label>
                                 </div>
                                 <div class="form-check d-inline">
-                                    <input type="checkbox" value="" id="flexCheckDefault">
+                                    <input type="checkbox" value="3" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Spa
                                     </label>
@@ -130,15 +130,39 @@
     </div>
     <!--======= Form Datos =======-->
     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Datos personales</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Datos</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- Body / form -->
                 <div class="modal-body">
-                    CONTENIDO
+                    <div class="d-flex justify-content-between align-items-center mx-3">
+                        <h2 class="modal-body-title m-0">Datos personales</h2>
+                    </div>
+                    <hr>
+                    <div class="modal-body-content d-flex flex-column mx-3">
+                        <div class="row mb-3">
+                            <label for="inputDate" class="col-sm-2 label-cotizacion col-form-label">Nombre y apellido</label>
+                            <div class="col-sm-10">
+                                <div class="row g-3">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Nombres">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Apellidos">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 label-cotizacion col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Footer / botones -->
                 <div class="modal-footer">
@@ -150,7 +174,7 @@
     </div>
     <!--======= Form Resumen =======-->
     <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Resumen</h1>
