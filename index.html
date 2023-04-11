@@ -443,11 +443,60 @@
                 </div>
                 <!-- Body / form -->
                 <div class="modal-body">
-                    CONTENIDO
+                    <div class="d-flex justify-content-between align-items-center mx-3">
+                        <h2 class="modal-body-title m-0">Resumen final</h2>
+                    </div>
+                    <hr>
+                    <div class="modal-body-content mx-3">
+                        <!-- Contenedor principal -->
+                        <div class="row">
+                            <div class="col-12 d-md-flex justify-content-between align-content-center">
+                                <div class="mx-3 p-0">
+                                    <p><small>Entrada</small></p>
+                                    <div id="ID-PARA_JS">
+                                        <p class="class-day-resume">Sab, 22 abr 2023</p>
+                                        <!-- Texto de ejemplo, este div deberia estar vacio -->
+                                    </div>
+                                    <p class="opacity-75"><small>12:00 - 00:00</small></p>
+                                </div>
+                                <div class="d-md-flex d-none vr-style">
+                                    <div class="vr"></div>
+                                </div>
+                                <hr class="d-block d-md-none">
+                                <div class="mx-3 p-0">
+                                    <p><small>Salida</small></p>
+                                    <div id="ID-PARA_JS">
+                                        <p class="class-day-resume">Dom, 23 abr 2023</p>
+                                        <!-- Texto de ejemplo, este div deberia estar vacio -->
+                                    </div>
+                                    <p class="opacity-75"><small>A 12:00</small></p>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <div class="col-12">
+                                <div id="ID-PARA_JS">
+                                    <p class="fs-18">1 x Habitacion compartida, 2 adultos, 0 menores</p>
+                                    <!-- Texto de ejemplo, este div deberia estar vacio -->
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <p class="m-0 d-inline total-class-resume">Total $ <span  id="ID-PARA_JS">0,00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Footer / botones -->
-                <div class="modal-footer">
-                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Volver</button>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Volver</button>
+                    <div class="g-3">
+                        <button type="button" class="btn btn-dark">
+                            <i class="bi bi-printer-fill"></i>
+                            <span class="d-none d-sm-inline">Imprimir comprobante</span>
+                        </button>
+                        <button type="button" class="btn btn-gold">
+                            Enviar
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
