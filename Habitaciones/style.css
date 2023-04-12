@@ -1,0 +1,118 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+/* EDITANDO HTML */
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #171A1B;
+    color: #F2EDE3;
+}
+.room-section__info--valor p small {
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+/* Botón dorado */
+.btn-gold {
+    background-color: #A47E1B;
+    color: #F2EDE3;
+    transition: 0.2s;
+}
+.btn-gold:hover {
+    background-color: transparent;
+    outline: .0625rem solid #A47E1B;
+    color: #F2EDE3;
+}
+
+/* SECCION HABITACIONES */
+.habitaciones {
+    width: 95vw;
+    margin: auto;
+}
+
+#title-contact {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.room-container {
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+.room-container:nth-child(even) {
+	background-color: #1E2324;
+}
+
+.room-section {
+    width: 90%;
+    height: auto;
+}
+
+.room-section__media {
+    width: 40%;
+    position: relative;
+    height: 15.625rem;
+}
+
+.room-section__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.room-section__media--calificacion {
+    padding: .4rem 1rem;
+    background-color: #A47E1B;
+    position: absolute;
+    z-index: 100;
+    top: 1.4rem;
+    border-radius: 0 .4rem .4rem 0;
+}
+
+.room-section__media--calificacion p span {
+    font-weight: 500;
+}
+
+.room-section__info {
+    width: 54%;
+}
+
+.room-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.room-section__info--valor i {
+    color: #AD78F0;
+}
+
+.room-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .room-section__media img {
+        width: 100%;
+        height: 14.375rem;
+    }
+
+    .room-section__media--calificacion {
+        top: -5rem;
+    }
+
+    .room-title {
+        margin: 1.3rem 0 1rem 0;
+    }
+}
